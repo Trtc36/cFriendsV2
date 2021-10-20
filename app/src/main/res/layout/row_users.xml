@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:shadowColor="#000000"
+                android:shadowRadius="2"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:id="@+id/tv_user"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Nombre_Usuario"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:drawableLeft="@drawable/ic_add"
+                android:text="Agregar"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:backgroundTint="@color/colorGris"
+                android:drawableLeft="@drawable/ic_send"
+                android:text="Enviada"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btnSolicitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:backgroundTint="@color/colorNaranja"
+                android:drawableLeft="@drawable/ic_check"
+                android:text="Aceptar"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/btnAmigos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="#000"
+                android:backgroundTint="#FF03DAC5"
+                android:drawableLeft="@drawable/ic_check"
+                android:text="Amigos"
+                android:visibility="gone"
+                />
+
+            <ProgressBar
+                android:id="@+id/progresbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

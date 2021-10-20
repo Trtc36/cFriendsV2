@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Close Friends</string>
+    <string name="inicio_sesion">Iniciar Sesión</string>
+    <string name="registro">Registrarse</string>
+    <string name="Iniciar">Iniciar Sesión</string>
+    <string name="CancelarInicio">Cancelar</string>
+    <string name="Registrarse">Registrarse</string>
+    <string name="Seleccionar">Seleccionar Foto</string>
+    <string name="Subir">Subir Foto</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_usuarios">USUARIOS</string>
+    <string name="fragment_chats">CHATS</string>
+    <string name="fragment_solicitudes">SOLICITUDES</string>
+    <string name="fragment_msolicitudes">MIS SOLICITUDES</string>
+</resources>

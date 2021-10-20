@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".InicioSesion">
+
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="536dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/ic_baseline_people_alt_24" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/formato_edit_text"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/formato_edit_text"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_seguridad" />
+
+        <LinearLayout
+            android:layout_width="378dp"
+            android:layout_height="168dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="entrarSesion"
+                android:text="@string/Iniciar"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnCancelarInicio"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="Cancelar"
+                android:text="@string/CancelarInicio"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

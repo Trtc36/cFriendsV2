@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:onClick="crearCuenta"
+    tools:context=".Registro">
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701">
+
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Cuenta"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <ImageView
+            android:id="@+id/ivUsuario"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/ic_baseline_person_add_24" />
+
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/btnSeleccionar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_background_ib"
+                android:src="@drawable/ic_select_image" />
+
+            <ImageButton
+                android:id="@+id/btnSubir"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_background_ib"
+                android:src="@drawable/ic_upload_image" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/formato_edit_text"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_nombre" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/formato_edit_text"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/formato_edit_text"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_seguridad" />
+
+        <EditText
+            android:id="@+id/edtPasswordRepetir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/formato_edit_text"
+            android:ems="10"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:drawableLeftCompat="@drawable/ic_seguridad" />
+
+        <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnIniciar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="crearCuenta"
+                android:text="@string/Registrarse"
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnCancelarInicio"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:onClick="Cancelar"
+                android:text="@string/CancelarInicio"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
